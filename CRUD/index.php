@@ -15,6 +15,13 @@ $customer = query("SELECT * FROM tb_customer2");
     <h1>Daftar Mahasiswa</h1>
     <a href="add.php">Tambah data customer</a>
     <br><br>
+
+    <form action="" method="post">
+        <input type="text" name="keyword" size="50" autofocus placeholder="input keyword..." autocomplete="off">
+        <button type="submit" name="search">Search</button>
+    </form>
+    <br>
+    
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No</th>
