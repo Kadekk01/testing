@@ -3,7 +3,7 @@ require 'funct.php';
 $id = $_GET["id_user"];
 
 $customer = query("SELECT * FROM tb_customer2 WHERE id = $id");
-var_dump($customer);
+var_dump($id);
 
 if(isset($_POST["submit"])){
     

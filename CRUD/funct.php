@@ -37,7 +37,7 @@ function delete($id) {
 }
 
 function search($keyword) {
-    $query = "SELECT * FROM tb_customer2 WHERE username LIKE '%$keyword%' OR nama LIKE '%$keyword%'";
+    $query = "SELECT * FROM tb_customer2 WHERE username LIKE '%$keyword%' OR nama LIKE '%$keyword%' OR alamat LIKE '%$keyword%'";
     return query($query);
 }
 ?>

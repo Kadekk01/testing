@@ -48,8 +48,8 @@ if( isset($_POST["search"])) {
             <td><?= $row["alamat"]?></td>
             <td><?= $row["no_telp"]?></td>
             <td>
-                <a href="update.php?id=<?= $row["id_user"];?>">edit</a> |
-                <a href="delete.php?id=<?= $row["id_user"];?>" onclick="return confirm('Yakin ingin menghapus?');">delete</a>
+                <a href="update.php?id_user=<?= $row["id_user"];?>">edit</a> |
+                <a href="delete.php?id_user=<?= $row["id_user"];?>" onclick="return confirm('Yakin ingin menghapus?');">delete</a>
             </td>
         </tr>
         <?php $i++ ?>
