@@ -1,0 +1,1 @@
+<?php echo same as <?=(on line 40) because it will view the variable or string and other
