@@ -1,6 +1,10 @@
 <?php
 require 'funct.php';
 $customer = query("SELECT * FROM tb_customer2");
+
+if(isset($POST["search"])) {
+    $customer = search($_POST["keyword"]);
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +25,7 @@ $customer = query("SELECT * FROM tb_customer2");
         <button type="submit" name="search">Search</button>
     </form>
     <br>
-    
+
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No</th>
