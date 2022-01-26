@@ -35,4 +35,9 @@ function delete($id) {
     mysqli_query($con, "DELETE FROM tb_customer2 WHERE id_user = $id");
     return mysqli_affected_rows($con);
 }
+
+function search($keyword) {
+    $query = "SELECT * FROM tb_customer2 WHERE username = '$keyword'";
+    return query($query);
+}
 ?>
