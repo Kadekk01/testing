@@ -2,7 +2,7 @@
 require 'funct.php';
 $customer = query("SELECT * FROM tb_customer2");
 
-if(isset($POST["search"])) {
+if( isset($_POST["search"])) {
     $customer = search($_POST["keyword"]);
 }
 ?>
