@@ -55,6 +55,10 @@ if(isset($_POST["submit"])){
                 <label for="no_telp">Nomor Telepon : </label>
                 <input type="text" name="no_telp" id="no_telp" required>
             </li>
+            <li>
+                <label for="picture">Picture :</label>
+                <input type="file" name="picture" id="picture">
+            </li>
             <button type="submit" name="submit">Add</button>
         </ul>   
 </body>
