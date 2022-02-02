@@ -2,8 +2,7 @@
 require 'funct.php';
 $id = $_GET["id_user"];
 
-$customer = query("SELECT * FROM tb_customer2 WHERE id = $id");
-var_dump($id);
+// $customer = query("SELECT * FROM tb_customer2 WHERE id = $id_user");
 
 if(isset($_POST["submit"])){
     
@@ -33,7 +32,7 @@ if(isset($_POST["submit"])){
     <title>Edit data</title>
 </head>
 <body>
-    <h1>Ubah data</h1>
+    <h1>Update data</h1>
     <form action="" method="post">
         <ul>
             <li>
@@ -60,7 +59,7 @@ if(isset($_POST["submit"])){
                 <label for="no_telp">Nomor Telepon : </label>
                 <input type="text" name="no_telp" id="no_telp" required>
             </li>
-            <button type="submit" name="submit">Edit</button>
+            <button type="submit" name="submit">Update</button>
         </ul>   
 </body>
 </html>

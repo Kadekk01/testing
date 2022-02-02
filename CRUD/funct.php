@@ -23,10 +23,7 @@ function add($data){
     $jkel = $data["jkel"];
     $alamat = $data["alamat"];
     $no_telp = $data["no_telp"];
-    $picture = upload();
-    if(!$picture) {
-        return false;
-    }
+
 
     $query = "INSERT INTO tb_customer2 VALUES ('', '$id_user', '$nama', '$username', '$jkel', '$alamat', '$no_telp')";
     mysqli_query($con, $query);
@@ -34,17 +31,17 @@ function add($data){
     return mysqli_affected_rows($con);
 }
 
-function upload() {
-    $filename = $_FILES['picture']['name'];
-    $filesize = $_FILES['picture']['size'];
-    $error = $_FILES['picture']['error'];
-    $filedrc = $_FILES['picture']['drc_name'];
+// function upload() {
+//     $filename = $_FILES['picture']['name'];
+//     $filesize = $_FILES['picture']['size'];
+//     $error = $_FILES['picture']['error'];
+//     $filedrc = $_FILES['picture']['drc_name'];
 
-    if($error === 4) {
-        echo "<script>alert('choose the picture')</script>";
-        return false;
-    }
-}
+//     if($error === 4) {
+//         echo "<script>alert('choose the picture')</script>";
+//         return false;
+//     }
+// }
 
 function delete($id) {
     global $con;
